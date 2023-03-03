@@ -6,22 +6,37 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+button{
+width: 3em;
+height: 1.6em;
+font-size: 2em;
+border-radius: .8em;
+padding-top: .2em;
+}
+.light{
+  background-color: rgb(255, 245, 245);
+  /* transition: ease-in .2s; */
+}
+.light *{
+  /* transition: ease-in-out 2s; */
+}
 
 .light button {
   color: white;
   background-color: #222;
-  width: 6em;
-  height: 1.5em;
 }
 
 .dark {
   background-color: #222;
+  /* transition: ease-in .1s; */
+}
+
+.dark *{
+  /* transition: ease-in-out 2s; */
 }
 
 .dark button {
   background-color: aliceblue;
-  width: 6em;
-  height: 1.5em;
   color: #222;
 }
 
@@ -31,3 +46,4 @@
 .dark h1 {
   color: white;
 }
+
