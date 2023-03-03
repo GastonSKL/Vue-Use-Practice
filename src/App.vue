@@ -25,7 +25,7 @@ const switchMode = () => {
         </p>
       </div>
       <div class="container__button">
-          <transition name="bounce-in" mode="out-in"> 
+          <transition name="fade-in" mode="out-in"> 
             <button @click="switchMode" v-if="colorMode==='light'" class="bounce-in-enter">
               <MoonButton />
             </button>
@@ -81,26 +81,28 @@ main {
   margin-top: 14em;
 }
 
-.bounce-in-enter-active {
-  animation-name: bounce-in;
-  animation-duration: 0.25s;
+.fade-in-enter-active{
+  animation: fadeIn .5s ;
 }
-
-.bounce-in-leave-active {
-  animation-name: bounce-in;
-  animation-duration: 0.25s;
-  animation-direction: reverse;
+.fade-in-leave-active{
+  animation: fadeOut .5s  ;
 }
-
-@keyframes bounce-in {
+@keyframes fadeIn {
   0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1.2);
+    opacity: 0;
+    
   }
   100% {
-    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    
+  }
+  100% {
+    opacity: 0;
   }
 }
 </style>

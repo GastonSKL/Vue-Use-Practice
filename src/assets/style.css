@@ -15,10 +15,10 @@ padding-top: .2em;
 }
 .light{
   background-color: rgb(255, 245, 245);
-  /* transition: ease-in .2s; */
+  transition: ease-in .2s;
 }
-.light *{
-  /* transition: ease-in-out 2s; */
+.light p,h1{
+  transition: ease-in-out 2s;
 }
 
 .light button {
@@ -28,11 +28,11 @@ padding-top: .2em;
 
 .dark {
   background-color: #222;
-  /* transition: ease-in .1s; */
+  transition: ease-in .2s;
 }
 
-.dark *{
-  /* transition: ease-in-out 2s; */
+.dark p,h1{
+  transition: ease-in-out 2s;
 }
 
 .dark button {
